@@ -1,9 +1,34 @@
+#!/usr/bin/env python3
+"""
+scripts/sanity.py — Environment sanity check
+"""
+
 import sys
+import platform
+import os
+from importlib.metadata import version, PackageNotFoundError
 
-def check_env():
-    print("--- Python Environment Sanity Check ---")
-    print(f"Python Version: {sys.version}")
-    print("Status: Python environment is set up correctly.")
+PACKAGES = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "jupyter",
+    "ipykernel",
+    "requests",
+    "pytest",
+    "python-dotenv",
+]
 
-if __name__ == "__main__":
-    check_env()
+print(f"Python version:  {sys.version}")
+print(f"Platform:        {platform.platform()}")
+print(f"Working dir:     {os.getcwd()}")
+print()
+print("Installed packages:")
+
+for pkg in PACKAGES:
+    try:
+        v = version(pkg)
+        print(f"  {pkg}: {v}")
+    except PackageNotFoundError:
+        print(f"  {pkg}: NOT FOUND")
