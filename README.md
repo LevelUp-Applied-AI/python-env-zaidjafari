@@ -31,3 +31,8 @@ python -m pip install -r requirements-prework.txt
 
 * **Jupyter Notebook:** I would choose a notebook when I am exploring a dataset and the next step depends on what I just saw, as it allows for interactive cell execution and immediate visual feedback. It is also perfect for building reports where code, charts, and narrative text must appear together.
 * **Python Script:** I would choose a script for production environments where code needs to run in a deterministic, top-to-bottom manner, such as in a cron job or a CI/CD pipeline. Scripts are preferred when I need full testing support (like pytest) or a clean Git history without noisy JSON diffs.
+## How to run
+
+1. **Set up the environment**: Activate your virtual environment using `.\.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (Mac/Linux).
+2. **Run the code**: Execute the main script from the root directory using `python main.py`.
+3. **Confirm success**: The terminal should display the program output without any error messages.

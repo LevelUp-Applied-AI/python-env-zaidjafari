@@ -1,0 +1,17 @@
+## 📝 Description
+**What changed?**
+- [Briefly describe the changes here]
+
+**Why is this change required?**
+- [Explain the problem or feature]
+
+## 🧪 How to test
+1. Activate venv: `source .venv/bin/activate` or `.\.venv\Scripts\activate`
+2. Run the application
+3. Verify the output matches expectations
+
+## ✅ Checklist
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code where necessary
+- [ ] My changes generate no new warnings
