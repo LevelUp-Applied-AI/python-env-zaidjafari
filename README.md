@@ -31,3 +31,6 @@ python -m pip install -r requirements-prework.txt
 
 * **Jupyter Notebook:** I would choose a notebook when I am exploring a dataset and the next step depends on what I just saw, as it allows for interactive cell execution and immediate visual feedback. It is also perfect for building reports where code, charts, and narrative text must appear together.
 * **Python Script:** I would choose a script for production environments where code needs to run in a deterministic, top-to-bottom manner, such as in a cron job or a CI/CD pipeline. Scripts are preferred when I need full testing support (like pytest) or a clean Git history without noisy JSON diffs.
+
+## When to use each
+I would choose a Jupyter notebook when I am exploring data interactively or need to create a visual report with charts and text. I would choose a Python script when the code needs to be part of an automated pipeline, imported into other modules, or tested using professional tools like pytest.
